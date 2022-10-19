@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ab07a6bfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-5">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="employees.html">Employee Listing</a>
+                <a class="nav-link" href="department.html">Department Listing</a>            
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="toolbar">
+        <div class="input-group my-3 w-25" >
+            <input type="search" class="form-control me-2" placeholder="Search Here ..." id="e-search">
+            <button class="btn btn-primary me-2" id="e-searchbtn">Search <!-- <i class="fa-solid fa-magnifying-glass"></i> --></button>
+            <button class="btn btn-primary" id="empclear">Clear</button>
+          </div>
+
+        <button class="btn btn-primary" id="addNewEmp">Add</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <table class="table table-striped table-bordered border-secondary" id="table">
+            <thead>                
+                <th>Employee Name</th>
+                <th>Employee ID</th>
+                <th>Employee Age</th>
+                <th>Action</th>
+            </thead>
+            <tbody id = "tbody2">
+
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+        <input id="input_first" type="button" value="First"  />
+        <input id="input_prev" type="button" value="Prev"  />
+        <input id="input_next" type="button" value="Next"  />
+        <input id="input_last" type="button" value="Last"  />
+    </div>
+    <script src="../Scripts/employees.js" type="module"></script>
+</body>
+</html>
