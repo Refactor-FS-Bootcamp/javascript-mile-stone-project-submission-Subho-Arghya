@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color:  rgb(225 181 64);
+    padding: 1vh;
+}
+
+.header .h1 {
+    text-align: center;
+    font-size: 6vh;
+    color: green;
+    text-shadow: 2px 2px #131
+    
+}
+
+ .notecreate{
+    background-color: blanchedalmond;
+    /* margin-top: 3vh; */
+    /* margin-bottom: 3vh; */
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.noteform {
+    background: lightslategray;
+    padding: 4vh 2vh;
+}
+.noteform h1 {
+    color: #f5f5d5;
+}
+
+#add_note, #edit_note {
+    width: 100%
+}
+
+.notedisplay {
+    background-color: rgb(139, 216, 67);
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+}
+
+.card-footer {
+    text-align: right;
+    font-size: 2vh;
+}

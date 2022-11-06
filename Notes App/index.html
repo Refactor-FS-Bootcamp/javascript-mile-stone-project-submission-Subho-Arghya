@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Home Page</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+   crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>  
+  <div class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <p class="navbar-brand mb-0 h1">Notes App</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <section class="notecreate">
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form class="noteform">
+            <h4>Add/ Edit Note </h4>
+            <div class="mb-3 mt-3">
+              <label for="title1" class="form-label">Title:</label>
+              <input type="text" class="form-control" id="title1" placeholder="Enter title">
+            </div>
+            <div class="mb-3">
+              <label for="describe" class="form-label">Note Body:</label>
+              <textarea class="form-control" id="describe" placeholder = "Description Goes Here" rows="4"></textarea>
+            </div>            
+            <button type="button" class="btn btn-primary" id="add_note">Add</button>
+            <button type="button" class="btn btn-primary" id="edit_note" style="display:none">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="notedisplay">
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="row noteslist">
+             <div class="col-md-6 col-sm-12 mb-3">
+              <div class="card">
+                <div class="card-header">
+                  <h3>$Title</h3>
+                </div>
+                <div class="card-body">
+                  <p>$Note Description</p>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-warning btn-sm">Delete</button>
+                </div>
+                <div class="card-footer">
+                  Created On: Date
+                </div>              
+              </div>   
+            </div>           
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  
+    
+  <script src="index.js"></script>
+</body>
+</html>
