@@ -1,0 +1,134 @@
+.mynav {
+    background: #db5f24 linear-gradient(24deg, #542c0a, transparent);
+}
+
+.mynav .nav-link {
+    font-size: 1.15rem;
+}
+
+.navbar-brand img {
+    padding-top: 1vh;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-color: slategray;    
+}
+
+.carousel-item img {
+    filter: brightness(0.5);
+    object-fit: fill;
+}
+
+#slides .carousel-caption {
+    bottom: 10rem;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    .carousel-item img {        
+            object-fit: cover;
+            
+            height: 100vh !important;         
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item img {        
+        object-fit: cover;
+        
+        height: 100vh !important;         
+}
+}
+
+
+/**
+Styles for the menu page
+**/
+
+.scroll {
+    height: 85vh;
+    margin: 0 20px;
+    overflow-y: scroll;
+}
+
+.scroll ::-webkit-scrollbar-track {
+    box-shadow: 0;
+}
+
+#listarea {
+    color: #f4f0dd;
+    background-color: rgb(51,51,51);
+}
+
+.menu_cuisine {
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+    color: #eee;
+    letter-spacing: 1.5px;
+}
+
+.menu_desc {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #888
+}
+
+/**
+Styles for the form page
+*/
+
+#form-section {
+    background-color: rgb(51,51,51);
+    color: #f4f0dd;
+    height: 86vh;
+}
+
+.booking_heading {
+    text-align: center;
+    padding: 2rem;
+    color: #eee;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.booking_form {
+    padding: 15px 25px;
+    background: #db5f24 linear-gradient(24deg, #542c0a, transparent);
+    border-radius: 2% 1% 4% 4%;
+}
+
+.form-control {
+    color: #607d8b;
+}
+
+/**
+Styles to display resevations
+*/
+
+#display_reservations {
+    background-color: rgb(51,51,51);
+    color: #f4f0dd;
+    min-height: 86vh;
+}
+
+.all_res_heading {    
+    color: #eee;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.card {
+    color: chocolate;
+}
